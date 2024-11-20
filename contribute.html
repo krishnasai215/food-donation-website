@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute - HarvestHeart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-grey-500 bg-opacity-50 z-20">
+        <a href="index.html" class="nav-link text-white border border-transparent px-6 rounded-lg font-bold text-3xl bg-transparent hover:bg-gray-800 hover:text-black transition-colors">
+            HarvestHeart.
+        </a>
+        <button class="md:hidden text-white" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="md:flex hidden md:space-x-6 space-y-4 md:space-y-0 md:static absolute left-0 top-14 w-full bg-gray-950 md:bg-transparent p-4" id="menu">
+            <li><a href="index.html" class="nav-link text-white px-4 py-2 rounded-lg hover:bg-white hover:text-black transition-colors duration-300">Home</a></li>
+            <li><a href="about.html" class="nav-link text-white px-4 rounded-lg py-2 hover:bg-white hover:text-black transition-colors duration-300">About</a></li>
+            <li><a href="donate.html" class="nav-link text-white px-4 rounded-lg py-2 hover:bg-white hover:text-black transition-colors duration-300">Donation</a></li>
+            <li><a href="contact.html" class="nav-link text-white px-4 rounded-lg py-2 hover:bg-white hover:text-black transition-colors duration-300">Contact</a></li>
+            <li><a href="contribute.html" class="nav-link text-white px-4 rounded-lg py-2 hover:bg-white hover:text-black transition-colors duration-300">Contribute</a></li>
+
+        </ul>
+        <div class="hidden md:flex space-x-4">
+            <a href="loginsignup.html" class="nav-link text-white rounded-lg border border-white px-4 py-2 hover:bg-gray-800 hover:text-black transition-colors">Login/Signup</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-8 py-20 bg-black text-white">
+        <!-- Section 1: Visit Needy People -->
+        <section class="max-w-6xl mx-auto mb-16">
+            <h1 class="text-5xl text-center mb-8">Visit us!</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1: Orphanage -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/orphanage.jpeg" alt="Orphanage" class="w-4/5 my-5 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Orphanage</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black ">
+                            <input type="hidden" name="location" value="Orphanage">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Card 2: Senior Citizen Home -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/senior_citizen_home.jpeg" alt="senior_citizen_home" class="w-4/5 my-5 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Senior Citizen Home</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="hidden" name="location" value="senior Citizen Home">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Card 3: Homeless Shelter -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/homeless_shelter.jpeg" alt="Homeless Shelter" class="w-4/5 my-5 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Homeless Shelter</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="hidden" name="location" value="Homeless Shelter">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Card 4: Animal Shelter -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/animal_shelter.jpeg" alt="Animal Shelter" class="w-4/5 my-4 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Animal Shelter</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="hidden" name="location" value="Animal Shelter">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Card 5: Disability Support Center -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/disability_center.jpeg" alt="Disability Support Center" class="w-4/5 my-4 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Disability Support Center</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="hidden" name="location" value="Disability Support Center">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Card 6: Food Bank -->
+                <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex justify-center">
+                        <img src="image/food_bank.jpeg" alt="Food Bank" class="w-4/5 my-4 h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h2 class="text-2xl text-white mb-4">Food Bank</h2>
+                        <form action="contribute1.php" method="POST">
+                            <input type="text" name="name" placeholder="Your Name" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="email" name="email" placeholder="Your Email" class="w-full mb-4 p-2 border-2 border-gray-300 rounded-lg text-black">
+                            <input type="hidden" name="location" value="Food Bank">
+                            <button type="submit" class="w-full bg-blue-700 text-white py-2 rounded-lg">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </br>
+        <!-- Book Pickup Form Section -->
+<section class="max-w-6xl mx-auto mt-16">
+    <h1 class="text-5xl text-center mb-8">Book a Pickup...</h1>
+    
+    <form action="contribute2.php" method="POST">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Raw Food Material Cards -->
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/rice.webp" alt="Rice" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Rice</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Rice" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/wheat.webp" alt="Wheat" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Wheat</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Wheat" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/oil.webp" alt="Oil" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Oil</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Oil" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/pulses.webp" alt="pulses" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Pulses</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Pulses" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/fruits.webp" alt="Fruits" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Fruits</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Fruits" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                <img src="image/vegetables.webp" alt="Vegetables" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl mb-4">Vegetables</h2>
+                    <label class="inline-flex items-center mb-4">
+                        <input type="checkbox" name="food[]" value="Vegetables" class="form-checkbox">
+                        <span class="ml-2">Select</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Add more items here if needed -->
+        </div>
+
+        <!-- User Input Fields -->
+
+        <div class="mb-4 ">
+            <label for="name" class="block text-left text-lg mb-2">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" class="w-1/2 px-4 py-2 text-lg rounded-lg border-2 text-black">
+        </div>
+
+        <div class="mb-4">
+            <label for="email" class="block text-left text-lg mb-2">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" class="w-1/2 px-4 py-2 text-lg rounded-lg border-2 text-black">
+        </div>
+
+        <div class="mb-4">
+            <label for="address" class="block text-left text-lg mb-2">Your Address</label>
+            <input type="text" id="address" name="address" placeholder="Your Address" class="w-1/2 px-4 py-2 text-lg rounded-lg border-2 text-black">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-1/4 bg-blue-700 text-white py-2 rounded-lg">
+            Book Pickup
+        </button>
+
+    </form>
+</section>
+
+
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+                <!-- Footer -->
+                <footer class="bg-black py-4 bg-orange-500 text-white text-center mt-0">
+                    <p>&copy; 2024 HarvestHeart. All rights reserved.</p>
+                    <div class="mt-2">
+                        <span>Follow us: </span>
+                        <a
+                            href="#"
+                            class="text-white ml-2 px-2 py-1 rounded transition-all duration-200 hover:bg-white hover:text-black"
+                        >
+                            Facebook
+                        </a>
+                        <a
+                            href="#"
+                            class="text-white ml-2 px-2 py-1 rounded transition-all duration-200 hover:bg-white hover:text-black"
+                        >
+                            Twitter
+                        </a>
+                        <a
+                            href="#"
+                            class="text-white ml-2 px-2 py-1 rounded transition-all duration-200 hover:bg-white hover:text-black"
+                        >
+                            Instagram
+                        </a>
+                    </div>
+                </footer>
+</body>
+</html>
